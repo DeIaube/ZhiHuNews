@@ -11,6 +11,7 @@
 - RxJava
 - Retrofit
 - Gson
+- LeanCloud
 
 ### 截图
 
