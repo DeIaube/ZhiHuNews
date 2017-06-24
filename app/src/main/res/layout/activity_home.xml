@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/main_content"
+    android:fitsSystemWindows="true"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.design.widget.AppBarLayout
+    android:fitsSystemWindows="true"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:fitsSystemWindows="true"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+<FrameLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        app:layout_behavior="hlj.zhihunews.ui.behavior.BottomNavigationViewBehavior"
+        android:id="@+id/navigation"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+</android.support.design.widget.CoordinatorLayout>
